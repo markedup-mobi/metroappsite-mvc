@@ -102,6 +102,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -117,6 +118,7 @@
     <Content Include="Content\css\icomoon.css" />
     <Content Include="Content\css\metro-ui-dark.css" />
     <Content Include="Content\css\metro-ui-light.css" />
+    <Content Include="Content\ico\favicon.ico" />
     <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -156,10 +158,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\ThirdParty\_googleAnalyticsScriptPartial.cshtml" />
+    <Content Include="Views\Shared\ThirdParty\_userVoiceScriptPartial.cshtml" />
+    <Content Include="Views\Shared\AppBar\_appBarPartial.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Content\font\" />
+    <Folder Include="Content\img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
