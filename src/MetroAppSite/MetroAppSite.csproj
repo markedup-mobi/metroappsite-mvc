@@ -118,9 +118,38 @@
     <Content Include="Content\css\icomoon.css" />
     <Content Include="Content\css\metro-ui-dark.css" />
     <Content Include="Content\css\metro-ui-light.css" />
+    <Content Include="Content\font\IcoMoon.svg" />
+    <Content Include="Content\font\LICENSE.txt" />
+    <Content Include="Content\font\opensans-bold-webfont.svg" />
+    <Content Include="Content\font\opensans-light-webfont.svg" />
+    <Content Include="Content\font\opensans-regular-webfont.svg" />
+    <Content Include="Content\font\opensans-semibold-webfont.svg" />
     <Content Include="Content\ico\favicon.ico" />
+    <Content Include="Content\img\appbar.png" />
+    <Content Include="Content\img\Devices.png" />
+    <Content Include="Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="Content\img\grid-baseline-20px.png" />
+    <Content Include="Content\img\Windows 8.png" />
+    <Content Include="Content\img\Windows alt.png" />
+    <Content Include="Content\img\windows_8_logo.png" />
     <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Content\font\IcoMoon.eot" />
+    <Content Include="Content\font\IcoMoon.ttf" />
+    <Content Include="Content\font\IcoMoon.woff" />
+    <Content Include="Content\font\opensans-bold-webfont.eot" />
+    <Content Include="Content\font\opensans-bold-webfont.ttf" />
+    <Content Include="Content\font\opensans-bold-webfont.woff" />
+    <Content Include="Content\font\opensans-light-webfont.eot" />
+    <Content Include="Content\font\opensans-light-webfont.ttf" />
+    <Content Include="Content\font\opensans-light-webfont.woff" />
+    <Content Include="Content\font\opensans-regular-webfont.eot" />
+    <Content Include="Content\font\opensans-regular-webfont.ttf" />
+    <Content Include="Content\font\opensans-regular-webfont.woff" />
+    <Content Include="Content\font\opensans-semibold-webfont.eot" />
+    <Content Include="Content\font\opensans-semibold-webfont.ttf" />
+    <Content Include="Content\font\opensans-semibold-webfont.woff" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\bootmetro-charms.js" />
@@ -166,8 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\font\" />
-    <Folder Include="Content\img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
