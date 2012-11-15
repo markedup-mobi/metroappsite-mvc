@@ -9,7 +9,9 @@ namespace MetroAppSite
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.mousewheel.js",
+                        "~/Scripts/jquery.scrollTo.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
@@ -17,6 +19,14 @@ namespace MetroAppSite
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/bootmetro").Include(
+                    "~/Scripts/bootstrap.min.js",
+                    "~/Scripts/bootmetro.js",
+                    "~/Scripts/bootmetro-charms.js",
+                    "~/Scripts/bootstrap-datepicker.js",
+                    "~/Scripts/holder.js"
+                ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
