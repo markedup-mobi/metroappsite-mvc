@@ -1,4 +1,4 @@
-/* Metro Tiles
+﻿/* Metro Tiles
 -------------------------------------------------- */
 
 .bg-color-blue {
@@ -54,7 +54,7 @@
 
    .metro-sections h2 {
       margin-left: 5px;
-      font-family: "Open Sans",Arial,Helvetica,Sans-Serif;
+      font-family: "Open Sans",Helvetica,"Helvetica Neue",Sans-Serif;
       font-weight: 300;
       text-transform: lowercase;
    }
@@ -312,8 +312,8 @@
    line-height: 18px;
    font-weight: normal;
    text-align: left;
-   max-height: 92px;
    overflow: hidden;
+   height:300px;
 }
 
 /* Image Only Tiles
@@ -446,7 +446,9 @@
       line-height: 60px;
       margin: 5px;
    }
-   .mediumListIconTextItem .mediumListIconTextItem-Detail {
+
+
+.mediumListIconTextItem .mediumListIconTextItem-Detail {
       display: inline-block;
       vertical-align: top;;
       margin: 5px;

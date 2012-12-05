@@ -3,15 +3,26 @@ using System.Web.Optimization;
 
 namespace MetroAppSite
 {
-    public class BundleConfig
+   public class BundleConfig
     {
-        // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new StyleBundle("~/content/css/bootMetroCss").Include(
+                        "~/content/css/bootmetro.css",
+                        "~/content/css/bootmetro-responsive.css",
+                        "~/content/css/bootmetro-ui-light.css",
+                        "~/content/css/datepicker.css",
+                        "~/content/css/metroAppSite.css"));
+
+            bundles.Add(new ScriptBundle("~/scripts/bootMetroScript").Include(
+                        "~/scripts/bootstrap.min.js",
+                        "~/scripts/bootmetro-panorama.js",
+                        "~/scripts/bootmetro-pivot.js",
+                        "~/scripts/bootmetro-charms.js",
+                        "~/scripts/bootstrap-datepicker.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/jquery.mousewheel.js",
-                        "~/Scripts/jquery.scrollTo.js"));
+                        "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
@@ -20,33 +31,28 @@ namespace MetroAppSite
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootmetro").Include(
-                    "~/Scripts/bootstrap.min.js",
-                    "~/Scripts/bootmetro.js",
-                    "~/Scripts/bootmetro-charms.js",
-                    "~/Scripts/bootstrap-datepicker.js",
-                    "~/Scripts/holder.js"
-                ));
-
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            //Light Metro UI theme
-            bundles.Add(new StyleBundle("~/Content/metro-light/css").Include("~/Content/css/metro-ui-light.css", "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
-            //Dark Metro UI theme
-            bundles.Add(new StyleBundle("~/Content/metro-dark/css").Include("~/Content/css/metro-ui-dark.css", "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
+                        "~/Content/themes/base/jquery.ui.core.css",
+                        "~/Content/themes/base/jquery.ui.resizable.css",
+                        "~/Content/themes/base/jquery.ui.selectable.css",
+                        "~/Content/themes/base/jquery.ui.accordion.css",
+                        "~/Content/themes/base/jquery.ui.autocomplete.css",
+                        "~/Content/themes/base/jquery.ui.button.css",
+                        "~/Content/themes/base/jquery.ui.dialog.css",
+                        "~/Content/themes/base/jquery.ui.slider.css",
+                        "~/Content/themes/base/jquery.ui.tabs.css",
+                        "~/Content/themes/base/jquery.ui.datepicker.css",
+                        "~/Content/themes/base/jquery.ui.progressbar.css",
+                        "~/Content/themes/base/jquery.ui.theme.css"));
 
-            //Base Metro UI theme
-            bundles.Add(new StyleBundle("~/Content/base/css").Include("~/Content/css/bootstrap.css",
-                "~/Content/css/bootstrap-responsive.css",
-                "~/Content/css/bootmetro.css",
-                "~/Content/css/bootmetro-tiles.css",
-                "~/Content/css/bootmetro-charms.css",
-                "~/Content/css/datepicker.css",
-                "~/Content/css/icomoon.css"));
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
