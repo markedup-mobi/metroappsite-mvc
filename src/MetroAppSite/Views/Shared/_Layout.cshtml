@@ -34,13 +34,6 @@
     <link rel="stylesheet" type="text/css" href="@Url.Content("../../content/css/demo.css")">
     <link rel="stylesheet" type="text/css" href="@Url.Content("../../scripts/google-code-prettify/prettify.css")">
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="content/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("../../content/ico/apple-touch-icon-144-precomposed.png")">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("../../content/ico/apple-touch-icon-114-precomposed.png")">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("../../content/ico/apple-touch-icon-72-precomposed.png")">
-    <link rel="apple-touch-icon-precomposed" href="@Url.Content("../../content/ico/apple-touch-icon-57-precomposed.png")">
-
     <!-- All JavaScript at the bottom, except for Modernizr and Respond.
       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
@@ -63,15 +56,14 @@
     @Html.Partial("AppBar/_appBarPartial") @* Customizeable Metro-style AppBar *@
 
     <script type="text/javascript" src="@Url.Content("../../scripts/jquery.touchSwipe.js")"></script>
-    <script type="text/javascript" src="@Url.Content("../../scripts/demo.js")"></script>
     <script type="text/javascript" src="@Url.Content("../../scripts/holder.js")"></script>
 
     <script type="text/javascript">
-        $('#hub').panorama({
-            nicescroll: false
+        $("document").ready(function () {
+            $('#myFlipview').carousel({ interval: 2500 });
+            $('#myFlipview').carousel('cycle');
         });
 
-        $('#pivot').pivot();
     </script>
 
     @Html.Partial("ThirdParty/_userVoiceScriptPartial") @* Customize this to include your own UserVoice (http://uservoice.com) system for managing customer feedback and support *@

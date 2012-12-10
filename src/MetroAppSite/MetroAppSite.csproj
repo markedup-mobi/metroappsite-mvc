@@ -133,6 +133,9 @@
     <Content Include="Content\ico\apple-touch-icon-57-precomposed.png" />
     <Content Include="Content\ico\apple-touch-icon-72-precomposed.png" />
     <Content Include="Content\ico\favicon.ico" />
+    <Content Include="Content\img\1m.jpg" />
+    <Content Include="Content\img\2m.jpg" />
+    <Content Include="Content\img\3m.jpg" />
     <Content Include="Content\img\appbar.png" />
     <Content Include="Content\img\avatar-movie-puzzles-2.jpg" />
     <Content Include="Content\img\bootstrap-mdo-sfmoma-01.jpg" />
@@ -307,10 +310,15 @@
     <Content Include="Images\surface2.png" />
     <Content Include="Images\surface3.png" />
     <Content Include="Scripts\bootmetro-charms.js" />
+    <Content Include="Scripts\bootmetro-panorama.js" />
+    <Content Include="Scripts\bootmetro-pivot.js" />
     <Content Include="Scripts\bootmetro.js" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\demo.js" />
+    <Content Include="Scripts\google-code-prettify\prettify.css" />
+    <Content Include="Scripts\google-code-prettify\prettify.js" />
     <Content Include="Scripts\holder.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -322,7 +330,9 @@
     <Content Include="Scripts\jquery.blockUI.js" />
     <Content Include="Scripts\jquery.form.js" />
     <Content Include="Scripts\jquery.mousewheel.js" />
+    <Content Include="Scripts\jquery.nicescroll.js" />
     <Content Include="Scripts\jquery.scrollTo.js" />
+    <Content Include="Scripts\jquery.touchSwipe.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -332,6 +342,8 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.6.2.min.js" />
+    <Content Include="Scripts\mustache.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -349,6 +361,7 @@
     <Content Include="Views\Shared\AppBar\_appBarPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Privacy.cshtml" />
+    <Content Include="Scripts\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
