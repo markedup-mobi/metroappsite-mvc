@@ -30,7 +30,6 @@
    <link rel="stylesheet" type="text/css" href="assets/css/bootmetro-icons-ie7.css">
    <![endif]-->
 
-    <!--  these two css are to use only for documentation -->
     <link rel="stylesheet" type="text/css" href="@Url.Content("../../content/css/demo.css")">
     <link rel="stylesheet" type="text/css" href="@Url.Content("../../scripts/google-code-prettify/prettify.css")">
 
@@ -53,21 +52,16 @@
 
     <script type="text/javascript" src="@Url.Content("../../scripts/google-code-prettify/prettify.js")"></script>
     @Scripts.Render("~/scripts/bootMetroScript")
+
     @Html.Partial("AppBar/_appBarPartial") @* Customizeable Metro-style AppBar *@
-
-    <script type="text/javascript" src="@Url.Content("../../scripts/jquery.touchSwipe.js")"></script>
-    <script type="text/javascript" src="@Url.Content("../../scripts/holder.js")"></script>
-
-    <script type="text/javascript">
-        $("document").ready(function () {
-            $('#myFlipview').carousel({ interval: 2500 });
-            $('#myFlipview').carousel('cycle');
-        });
-
-    </script>
 
     @Html.Partial("ThirdParty/_userVoiceScriptPartial") @* Customize this to include your own UserVoice (http://uservoice.com) system for managing customer feedback and support *@
     @Html.Partial("ThirdParty/_googleAnalyticsScriptPartial") @* Customize this to include your own Google Analytics tracking ID *@
 
+     <script type="text/javascript">
+         $("document").ready(function () {
+             $('#bootFlipView').carousel({ interval: 3500 });
+         });
+    </script>
 </body>
 </html>
