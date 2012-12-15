@@ -15,11 +15,7 @@ namespace MetroAppSite
                         "~/content/css/metroAppSite.css"));
 
             bundles.Add(new ScriptBundle("~/scripts/bootMetroScript").Include(
-                        "~/scripts/bootstrap.min.js",
-                        "~/scripts/bootmetro-panorama.js",
-                        "~/scripts/bootmetro-pivot.js",
-                        "~/scripts/bootmetro-charms.js",
-                        "~/scripts/bootstrap-datepicker.js"));
+                        "~/scripts/bootstrap.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
