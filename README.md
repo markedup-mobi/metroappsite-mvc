@@ -12,7 +12,8 @@ MetroAppSite includes:
 
 ## Configuration Instructions
 
-1. Fork and clone this repository.
+Fork and clone this repostiory, and then:
+
 1. Edit the marketing text (features, testimonials, headers, etc...) on [Index.cshtml][7].
 1. Add your own carousel pictures to [Index.cshtml][7]. MetroAppSite uses the [Twitter Bootstrap photo carousel][3].
 1. Embed your own [Twitter timeline widget] [5] on [Index.cshtml][7].
