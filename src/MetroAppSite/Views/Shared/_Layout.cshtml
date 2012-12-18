@@ -49,14 +49,16 @@
     @Scripts.Render("~/scripts/bootMetroScript")
 
     @Html.Partial("AppBar/_appBarPartial") @* Customizeable Metro-style AppBar *@
+    
+    @RenderSection("Scripts", false)
 
     @Html.Partial("ThirdParty/_userVoiceScriptPartial") @* Customize this to include your own UserVoice (http://uservoice.com) system for managing customer feedback and support *@
     @Html.Partial("ThirdParty/_googleAnalyticsScriptPartial") @* Customize this to include your own Google Analytics tracking ID *@
 
-     <script type="text/javascript">
-         $("document").ready(function () {
-             $('#bootFlipView').carousel({ interval: 3500 });
-         });
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $('#bootFlipView').carousel({ interval: 3500 });
+        });
     </script>
 </body>
 </html>
