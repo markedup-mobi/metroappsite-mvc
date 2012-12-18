@@ -23,7 +23,7 @@ namespace MetroAppSite.Controllers
             /*
                 ToDo: change this URL to be equal to the URL of your app on the Windows Store
              */
-            var AppDownloadUrl = "http://apps.microsoft.com/windows/en-US/app/relay/c7913da4-33ca-4642-8844-8bfa30c1e524";
+            var AppDownloadUrl = "https://github.com/markedup-mobi/metroappsite-mvc";
 
             return RedirectPermanent(AppDownloadUrl);
         }
