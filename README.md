@@ -17,11 +17,12 @@ Fork and clone this repostiory, and then:
 1. Edit the marketing text (features, testimonials, headers, etc...) on [Index.cshtml][7].
 1. Add your own carousel pictures to [Index.cshtml][7]. MetroAppSite uses the [Twitter Bootstrap photo carousel][3].
 1. Embed your own [Twitter timeline widget] [5] on [Index.cshtml][7].
-1. Add your own[UserVoice] [4] information from [_userVoiceScriptPartial.cshtml][8] partial view.
+1. Add your own [UserVoice] [4] information from [_userVoiceScriptPartial.cshtml][8] partial view.
 1. Add your own [Google Analytics] [2] information from [_googleAnalyticsScriptPartial.cshtml][9] partial view.
 1. Change the `ViewBag.Title` property for both your home page and privacy policy in [HomeController.cs][10].
 1. Change the `AppDownloadUrl` variable in [HomeController.cs][10] to be equal to your app's url in the Windows Store.
 1. Add your own marketing terms to meta tags at _Layout.cshtml.
+1. Create your own privacy policy for your app at [PrivacyChoice.org][11] and replace the contents of the privacy policy on Privacy.cshtml.
 
 This template is based on [BootMetro][1]. 
 
@@ -35,3 +36,4 @@ This template is based on [BootMetro][1].
 [8]: https://github.com/markedup-mobi/metroappsite-mvc/blob/master/src/MetroAppSite/Views/Shared/ThirdParty/_userVoiceScriptPartial.cshtml
 [9]: https://github.com/markedup-mobi/metroappsite-mvc/blob/master/src/MetroAppSite/Views/Shared/ThirdParty/_googleAnalyticsScriptPartial.cshtml
 [10]: https://github.com/markedup-mobi/metroappsite-mvc/blob/master/src/MetroAppSite/Controllers/HomeController.cs
+[11]: http://www.privacychoice.org/policymaker/

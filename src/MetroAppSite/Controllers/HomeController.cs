@@ -6,6 +6,7 @@ namespace MetroAppSite.Controllers
     {
         public ActionResult Index()
         {
+            //[6]: Change this to reflect the title of your app
             ViewBag.Title = "MetroAppSite";
 
             return View();
@@ -13,6 +14,7 @@ namespace MetroAppSite.Controllers
 
         public ActionResult Privacy()
         {
+            //[6]: Change this to reflect the title of your app
             ViewBag.Title = "MetroAppSite - Privacy Policy";
 
             return View();
@@ -20,9 +22,7 @@ namespace MetroAppSite.Controllers
 
         public ActionResult Download()
         {
-            /*
-                ToDo: change this URL to be equal to the URL of your app on the Windows Store
-             */
+            //[7]: Change this to the URL of your app on the Windows Store
             var AppDownloadUrl = "https://github.com/markedup-mobi/metroappsite-mvc";
 
             return RedirectPermanent(AppDownloadUrl);
