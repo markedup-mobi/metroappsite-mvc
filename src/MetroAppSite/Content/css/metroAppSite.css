@@ -1,4 +1,8 @@
-﻿#surfacedCarousel {
+﻿body {
+    margin: auto;
+}
+
+#surfacedCarousel {
     background-image: url(../img/surface3.png);
     background-position: center top;
     background-repeat: no-repeat;
@@ -10,4 +14,8 @@
     height: 383px;
     width: 679px;
     margin: 49px auto auto;
+}
+
+.metro-responsive-tiles .no-click {
+    cursor:default !important;
 }

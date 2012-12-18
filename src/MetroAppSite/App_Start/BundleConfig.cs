@@ -10,7 +10,7 @@ namespace MetroAppSite
             bundles.Add(new StyleBundle("~/content/css/bootMetroCss").Include(
                         "~/content/css/bootmetro.css",
                         "~/content/css/bootmetro-responsive.css",
-                        "~/content/css/bootmetro-ui-light.css",
+                        "~/content/css/metro-ui-dark.css", /* Change this to metro-ui-light.css for light theme! */
                         "~/content/css/datepicker.css",
                         "~/content/css/metroAppSite.css"));
 
@@ -29,10 +29,9 @@ namespace MetroAppSite
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+            bundles.Add(new ScriptBundle("~/scripts/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

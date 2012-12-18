@@ -112,16 +112,12 @@
     <Content Include="Content\css\bootmetro-icons.css" />
     <Content Include="Content\css\bootmetro-responsive.css" />
     <Content Include="Content\css\bootmetro-tiles.css" />
-    <Content Include="Content\css\bootmetro-ui-light.css" />
     <Content Include="Content\css\bootmetro.css" />
     <Content Include="Content\css\datepicker.css" />
     <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\metro-ui-dark.css" />
     <Content Include="Content\css\metro-ui-light.css" />
     <Content Include="Content\css\metroAppSite.css" />
-    <Content Include="Content\css\_bootmetro.css" />
-    <Content Include="Content\css\_metro-ui-dark.css" />
-    <Content Include="Content\css\_metro-ui-light.css" />
     <Content Include="Content\font\IcoMoon.svg" />
     <Content Include="Content\font\LICENSE.txt" />
     <Content Include="Content\font\opensans-bold-webfont.svg" />
