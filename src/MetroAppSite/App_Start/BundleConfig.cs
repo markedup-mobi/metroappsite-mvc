@@ -10,7 +10,7 @@ namespace MetroAppSite
             bundles.Add(new StyleBundle("~/content/css/bootMetroCss").Include(
                         "~/content/css/bootmetro.css",
                         "~/content/css/bootmetro-responsive.css",
-                        "~/content/css/bootmetro-ui-light.css",
+                        "~/content/css/metro-ui-dark.css",
                         "~/content/css/datepicker.css",
                         "~/content/css/metroAppSite.css"));
 
