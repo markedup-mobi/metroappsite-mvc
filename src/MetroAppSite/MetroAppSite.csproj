@@ -112,7 +112,6 @@
     <Content Include="Content\css\bootmetro-icons.css" />
     <Content Include="Content\css\bootmetro-responsive.css" />
     <Content Include="Content\css\bootmetro-tiles.css" />
-    <Content Include="Content\css\bootmetro-ui-light.css" />
     <Content Include="Content\css\bootmetro.css" />
     <Content Include="Content\css\datepicker.css" />
     <Content Include="Content\css\demo.css" />
