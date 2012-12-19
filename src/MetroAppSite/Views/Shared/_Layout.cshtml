@@ -51,10 +51,7 @@
 
     @Html.Partial("AppBar/_appBarPartial") @* Customizeable Metro-style AppBar *@
 
-    @RenderSection("Scripts", false)
-
-    @Html.Partial("ThirdParty/_userVoiceScriptPartial") @* Customize this to include your own UserVoice (http://uservoice.com) system for managing customer feedback and support *@
-    @Html.Partial("ThirdParty/_googleAnalyticsScriptPartial") @* Customize this to include your own Google Analytics tracking ID *@
+   
 
     <script type="text/javascript">
         $("document").ready(function () {
@@ -63,8 +60,13 @@
     </script>
     <div class="container-fluid">
         <div class="row-fluid">
-                <p><a href="https://github.com/markedup-mobi/metroappsite-mvc">MetroAppSite MVC</a> by <a href="https://markedup.com/">MarkedUp Analytics for Windows 8</a></p>
+            <p><a href="https://github.com/markedup-mobi/metroappsite-mvc">MetroAppSite MVC</a> by <a href="https://markedup.com/">MarkedUp Analytics for Windows 8</a></p>
         </div>
     </div>
+    
+     @RenderSection("Scripts", false)
+
+    @Html.Partial("ThirdParty/_userVoiceScriptPartial") @* Customize this to include your own UserVoice (http://uservoice.com) system for managing customer feedback and support *@
+    @Html.Partial("ThirdParty/_googleAnalyticsScriptPartial") @* Customize this to include your own Google Analytics tracking ID *@
 </body>
 </html>

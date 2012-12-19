@@ -1,6 +1,8 @@
 # Metroappsite-MVC4
 MetroAppSite for MVC4 is an off-the-shelf ASP.NET MVC4 project that leverages [Twitter Bootstrap][6] and [BootMetro][1] to help Windows Store developers craft customizeable, Metro-style websites to help promote their application and meet Windows Store certification requirements.
 
+MetroAppSite is developed and maintained by the engineering team from [MarkedUp Analytics][12].
+
 ### What's Included
 MetroAppSite includes:
 
@@ -17,8 +19,8 @@ Fork and clone this repostiory, and then:
 1. Edit the marketing text (features, testimonials, headers, etc...) on [Index.cshtml][7].
 1. Add your own carousel pictures to [Index.cshtml][7]. MetroAppSite uses the [Twitter Bootstrap photo carousel][3].
 1. Embed your own [Twitter timeline widget] [5] on [Index.cshtml][7].
-1. Add your own [UserVoice] [4] information from [_userVoiceScriptPartial.cshtml][8] partial view.
-1. Add your own [Google Analytics] [2] information from [_googleAnalyticsScriptPartial.cshtml][9] partial view.
+1. Add your own [UserVoice] [4] information in the [_userVoiceScriptPartial.cshtml][8] partial view.
+1. Add your own [Google Analytics] [2] information in the [_googleAnalyticsScriptPartial.cshtml][9] partial view.
 1. Change the `ViewBag.Title` property for both your home page and privacy policy in [HomeController.cs][10].
 1. Change the `AppDownloadUrl` variable in [HomeController.cs][10] to be equal to your app's url in the Windows Store.
 1. Add your own marketing terms to meta tags at _Layout.cshtml.
@@ -37,3 +39,4 @@ This template is based on [BootMetro][1].
 [9]: https://github.com/markedup-mobi/metroappsite-mvc/blob/master/src/MetroAppSite/Views/Shared/ThirdParty/_googleAnalyticsScriptPartial.cshtml
 [10]: https://github.com/markedup-mobi/metroappsite-mvc/blob/master/src/MetroAppSite/Controllers/HomeController.cs
 [11]: http://www.privacychoice.org/policymaker/
+[12]: https://markedup.com/
