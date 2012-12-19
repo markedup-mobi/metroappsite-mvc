@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,8 +56,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Optimization">
-      <HintPath>..\..\..\..\Visual Studio 2012\Projects\MarkedUpTemplate1\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+     <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.0-alpha1\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -133,37 +135,11 @@
     <Content Include="Content\img\2m.jpg" />
     <Content Include="Content\img\3m.jpg" />
     <Content Include="Content\img\appbar.png" />
-    <Content Include="Content\img\bs-docs-bootstrap-features.png" />
-    <Content Include="Content\img\bs-docs-masthead-pattern.png" />
-    <Content Include="Content\img\bs-docs-responsive-illustrations.png" />
-    <Content Include="Content\img\bs-docs-twitter-github.png" />
-    <Content Include="Content\img\Coding app.png" />
     <Content Include="Content\img\detail-appbar-1.png" />
     <Content Include="Content\img\detail-appbar-2.png" />
-    <Content Include="Content\img\detail-charms.png" />
-    <Content Include="Content\img\detail-headermenu.png" />
-    <Content Include="Content\img\detail-icons.png" />
-    <Content Include="Content\img\Devices.png" />
-    <Content Include="Content\img\examples\bootstrap-example-carousel.png" />
-    <Content Include="Content\img\examples\bootstrap-example-fluid.jpg" />
-    <Content Include="Content\img\examples\bootstrap-example-hero.jpg" />
-    <Content Include="Content\img\examples\bootstrap-example-marketing-narrow.png" />
-    <Content Include="Content\img\examples\bootstrap-example-signin.png" />
-    <Content Include="Content\img\examples\bootstrap-example-starter.jpg" />
-    <Content Include="Content\img\examples\bootstrap-example-sticky-footer.png" />
-    <Content Include="Content\img\examples\browser-icon-chrome.png" />
-    <Content Include="Content\img\examples\browser-icon-firefox.png" />
-    <Content Include="Content\img\examples\browser-icon-safari.png" />
-    <Content Include="Content\img\examples\slide-01.jpg" />
-    <Content Include="Content\img\examples\slide-02.jpg" />
-    <Content Include="Content\img\examples\slide-03.jpg" />
-    <Content Include="Content\img\github-icons.png" />
-    <Content Include="Content\img\github.gif" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\grid-baseline-20px.png" />
-    <Content Include="Content\img\metro-messages.png" />
-    <Content Include="Content\img\My Apps.png" />
     <Content Include="Content\img\progress-indeterminate-dark.gif" />
     <Content Include="Content\img\progress-indeterminate-light.gif" />
     <Content Include="Content\img\progress-indeterminate-ring-dark-small.gif" />
@@ -305,6 +281,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
