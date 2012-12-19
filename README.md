@@ -1,6 +1,8 @@
 # Metroappsite-MVC4
 MetroAppSite for MVC4 is an off-the-shelf ASP.NET MVC4 project that leverages [Twitter Bootstrap][6] and [BootMetro][1] to help Windows Store developers craft customizeable, Metro-style websites to help promote their application and meet Windows Store certification requirements.
 
+MetroAppSite is developed and maintained by the engineering team from [MarkedUp Analytics][12].
+
 ### What's Included
 MetroAppSite includes:
 
@@ -37,3 +39,4 @@ This template is based on [BootMetro][1].
 [9]: https://github.com/markedup-mobi/metroappsite-mvc/blob/master/src/MetroAppSite/Views/Shared/ThirdParty/_googleAnalyticsScriptPartial.cshtml
 [10]: https://github.com/markedup-mobi/metroappsite-mvc/blob/master/src/MetroAppSite/Controllers/HomeController.cs
 [11]: http://www.privacychoice.org/policymaker/
+[12]: https://markedup.com/
